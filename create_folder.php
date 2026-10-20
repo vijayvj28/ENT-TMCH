@@ -1,0 +1,10 @@
+<?php
+// create_folder.php
+
+require_once __DIR__ . '/config/db.php';
+check_auth();
+
+require_once __DIR__ . '/src/Controllers/DocumentController.php';
+$docCtrl = new DocumentController();
+$docCtrl->createFolder($pdo);
+exit;

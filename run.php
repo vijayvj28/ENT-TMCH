@@ -1,0 +1,1 @@
+<?php $conn = new mysqli("localhost", "root", "", "medical_db"); $sql = file_get_contents("C:/xampp/htdocs/fine/database.sql"); if ($conn->multi_query($sql)) { do { if ($res = $conn->store_result()) { $res->free(); } } while ($conn->next_result()); echo "Success"; } else { echo "Error: " . $conn->error; } ?>

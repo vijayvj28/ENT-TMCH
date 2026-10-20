@@ -1,0 +1,23 @@
+# Composer dependencies
+/vendor/
+composer.phar
+
+# Environment & Config files (contains secrets/credentials)
+/config/db.php
+
+# Local backups and uploads
+/backups/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
